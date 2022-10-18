@@ -1,7 +1,7 @@
 /* tag generali e che riguardano tutta la struttura */
 
 body{
-    min-width: 55rem;
+    min-width: 60rem;
 }
 
 *{
@@ -11,7 +11,7 @@ body{
     font-family: sans-serif;
 }
 
-button{
+.button{
     border-radius: 2rem;
     padding: 0.6rem;
     border: 0;
@@ -25,7 +25,7 @@ button{
 /* parte header */
 
 header{
-    height: 50vh;
+    height: 62vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -42,8 +42,10 @@ header{
     justify-content: space-between;
 }
 
-#login{
+.login{
     background-color: white;
+    color: black;
+    margin: 0;
 }
 
 .upper-link{
@@ -59,29 +61,35 @@ header{
 /* parte header con frase motivazionale e link per scaricare */
 
 header>div:last-child{
-    width: 45%;
-    margin: auto;
+    width: 50%;
+    margin: 3rem auto;
     text-align: center;
     color: white;
 }
 
 div>h1{
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
 }
 
-#mac-download,#open-in-browser{
-    margin: 1.5rem;
-    padding: 0.8rem;
+.subtitle{
+    margin: 2rem 1rem 3rem;
+    line-height: 1.6rem;
+}
+
+.mac-download,.open-in-browser{
+    margin: 0.5rem;
+    padding: 1rem;
 } 
 
-#mac-download{
+.mac-download{
     background-color: white;
     color: black;
 }
 
-#open-in-browser{
+.open-in-browser{
     background-color: rgb(35,39,42);
     color: white;
+
 }
 
 /* parte main con le varie descrizioni */
@@ -90,12 +98,16 @@ div>h1{
     width: 100%;
     height: 5rem;
     background-image: url(../img/wave.svg);
-    filter: grayscale(100%);
+    filter: opacity(0.04);
+}
+
+.rotate{
+    transform: rotate(180deg);
 }
 
 .description{
     width: 70%;
-    height: 60vh;
+    height: 70vh;
     align-items: center;
     margin: 0 auto;
 }
@@ -103,6 +115,10 @@ div>h1{
 div>h2{
     margin-bottom: 1rem;
     font-size: 2rem;
+}
+
+.final-description>h2{
+    font-size: 2.8rem;
 }
 
 main>div:nth-child(3),
@@ -163,7 +179,7 @@ main>div:nth-child(3)>.description{
     margin: auto;
 }
 
-.final-description>button{
+.final-description>a{
     background-color: rgb(135, 135, 252);
     color: white;
 }
@@ -171,7 +187,7 @@ main>div:nth-child(3)>.description{
 /* parte footer */
 
 footer{
-    background-color: rgb(27, 29, 32);
+    background-color: rgb(35,39,42);
     width: 100%;
 }
 
@@ -235,11 +251,11 @@ hr{
 
 #footer-container>div:last-child{
     margin: auto;
-    padding: 2rem 0;
+    padding: 2rem 0 5rem;
     justify-content: space-between;
 }
 
-#registration{
+.registration{
     background-color: rgb(135, 135, 252);
     color: white;
 }
