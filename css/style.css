@@ -25,7 +25,7 @@ button{
 /* parte header */
 
 header{
-    height: 30rem;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,24 +35,14 @@ header{
 
 /* container con logo, link e login */
 
-#nav-container{
-    height: 15%;
-    display: flex;
-    margin-top: 1rem;
-}
-
 .nav{
-    height: 65%;
     display: flex;
     width: 70%;
-    margin: auto;
+    margin: 1rem auto;
     justify-content: space-between;
-    align-items: center;
 }
 
-
 #login{
-    justify-content: flex-end;
     background-color: white;
 }
 
@@ -69,9 +59,8 @@ header{
 /* parte header con frase motivazionale e link per scaricare */
 
 header>div:last-child{
-    height: 75%;
     width: 45%;
-    margin: 5rem auto;
+    margin: auto;
     text-align: center;
     color: white;
 }
@@ -80,18 +69,19 @@ div>h1{
     margin-bottom: 1.5rem;
 }
 
+#mac-download,#open-in-browser{
+    margin: 1.5rem;
+    padding: 0.8rem;
+} 
+
 #mac-download{
     background-color: white;
     color: black;
-    margin: 1.5rem;
-    padding: 0.8rem;
 }
 
 #open-in-browser{
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(35,39,42);
     color: white;
-    margin: 1.5rem;
-    padding: 0.8rem;
 }
 
 /* parte main con le varie descrizioni */
@@ -105,7 +95,7 @@ div>h1{
 
 .description{
     width: 70%;
-    height: 30rem;
+    height: 60vh;
     align-items: center;
     margin: 0 auto;
 }
@@ -120,7 +110,7 @@ main>div:last-child{
     background-color: rgb(244, 244, 244);
 }
 
-.flex>.description{
+main>div:nth-child(3)>.description{
     flex-direction: row-reverse;
 }
 
@@ -128,7 +118,7 @@ main>div:last-child{
     background-size: contain;
     background-repeat: no-repeat;
     width: 60%;
-    height: 85%;
+    height: 75%;
 }
 
 .photo1{
@@ -146,21 +136,15 @@ main>div:last-child{
 .text{
     width: 40%;
     height: 85%;
-    color: black;
+    color: rgb(35,39,42);
     padding: 2rem 3rem;
 }
 
-.final-description-container{
-    width: 70%;
-    padding: 5rem 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
 .final-description{
-    width: 100%;
+    width: 70%;
     text-align: center;
+    margin: auto;
+    padding: 5rem 0;
 }
 
 .final-description>img{
@@ -189,18 +173,18 @@ main>div:last-child{
 footer{
     background-color: rgb(27, 29, 32);
     width: 100%;
-    height: 50%;
+}
+
+#footer-container{
+    width: 70%;
+    margin: 0 auto;
 }
 
 .legenda{
-    width: 65%;
-    margin: auto;
     padding: 2rem 0;
-    flex-wrap: wrap;
 }
 
 #social{
-    height: 100%;
     width: 30%;
     padding-right: 3rem;
 }
@@ -223,11 +207,6 @@ footer{
     padding-bottom: 1rem;
 }
 
-#language>span{
-    font-weight: bold;
-
-}
-
 a{
     margin-right: 1rem;
     color: white;
@@ -236,7 +215,6 @@ a{
 }
 
 .link{
-    height: 100%;
     min-width: calc(70% / 4);
     flex-direction: column;
 }
@@ -251,13 +229,11 @@ a{
 }
 
 hr{
-    width: 65%;
     border-color: rgb(135, 135, 252);
     margin: auto;
 }
 
-footer>div:last-child{
-    width: 65%;
+#footer-container>div:last-child{
     margin: auto;
     padding: 2rem 0;
     justify-content: space-between;
